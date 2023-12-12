@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.8.0/p5.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.8.0/addons/p5.sound.min.js"></script> -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap"
+  rel="stylesheet">
+  <meta charset="utf-8" />
+
+  <!-- font awesome script -->
+  <script src="https://kit.fontawesome.com/13b2e54b46.js" crossorigin="anonymous"></script>
+  
+  <!-- Include jQuery from Google CDN -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+
+</head>
+
+<body>
+  <main class="wrapper">
+    <div id="input_div">
+      <div id="question-holder">
+
+        <p id="question"> What is your dream vacation destination? </p>
+
+        <button id="question-btn"><i class="fa-solid fa-rotate"></i></button>
+  
+      </div>
+      <p>
+         <input type="text" id="city" placeholder="Your Answer" oninput="weatherAsk()"></input>
+      </p>
+
+      <!-- <button id="submit" value="Submit">Search</button> -->
+    </div>
+    <!-- <button id="info"><i class="fa-solid fa-circle-info"></i></button> -->
+    <div class="show" id="data"></div>
+  </main>
+  <script src="sketch.js"></script>
+  <script src="star.js"></script>
+  <script src="util.js"></script>
+  <script src="temp.js"></script>
+  <script src="question.js"></script>
+</body>
+
+</html>
