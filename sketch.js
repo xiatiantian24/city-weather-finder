@@ -64,10 +64,10 @@ function gotData(data) {
     modPressure = pow(pressure - 900, 3);
 
     // Creating a string representation of the weather data
-    weatherInfo = `Temperature: ${temp}&deg;F<br>
-    Wind Speed: ${speed} mph<br>
+    weatherInfo = `Wind Speed: ${speed} mph<br>
     Humidity: ${humidity}%<br>
-    Pressure: ${pressure} hPa<br>`;
+    Pressure: ${pressure} hPa<br>
+    Temperature: ${temp}&deg;F<br>`;
   }
 }
 
