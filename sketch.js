@@ -35,6 +35,10 @@ function setup() {
   }
 }
 
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
+}
+
 function weatherAsk() {
   var url = api + "q=" + input.value() + APIkey + units;
   loadJSON(url, gotData, (err) => {
